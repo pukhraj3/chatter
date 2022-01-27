@@ -1,55 +1,4 @@
-/* size, dimension, and set header background to low opacity 
-    bottom white border separating header from content */
-    .header{
-        display:flex;
-        align-items:center;
-        padding-left:3rem;
-        padding-bottom:1rem;
-        padding-top:1rem;
-        height:2rem;
-        width:100%;
-        border-bottom:.15rem solid white;
-        background:rgba(255, 255, 255, 0.3); 
-      }
-      
-      /* position cat gif in corner and size to fit header*/
-      .cat-gif{
-        margin-left:-24px;
-        height:4rem;
-      }
-      
-      /* container to break up header and footer,
-         will harbor text messages 
-         position each text message in a row
-         at bottom left corner*/
-      .text-screen{
-        display:flex;
-        flex-direction:column-reverse;
-        align-items:flex-start;
-        height:545px;;
-        width:100%;
-        margin-bottom: .5rem;
-        background:transparent;
-      }
-      
-      /* spacing around each message,
-          not sure how to make text box responsive 
-          to word length of the text message 
-            partial rounded edges with border radius */
-      .text-message{
-        display:flex;
-        align-items:center;
-        justify-content: space-around;
-        height:2rem;
-        width:7rem;
-        margin-left:2rem;
-        margin-bottom:1rem;
-        background:rgb(24, 23, 23);
-        border-radius: 15px 15px 15px 0%;
-      }
-      
-      /* container for type box
-          top white border separating footer from content */
+      /* footer with top white border separating from content */
       .footer {
         display:flex;
         align-items:center;
@@ -61,26 +10,26 @@
         position: relative;
       }
       
-      /* container for send button with rounded edges */
+      /* text input box */
       .text-input {
         padding: 0 1rem;
         height:2rem;
-        width:95%;
+        width:90%;
         background:rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         border: 1px solid white;
         border-radius:1rem;
-        /* cursor:text; */
+        position:absolute;
       }
       
-      /* circular button using border radius */
+      /* send button */
       .send {
         border-radius: 50%;
         border:none;
         height:1.6rem;
         width:1.6rem;
         position: absolute;
-        right: 2rem;
-        background:rgb(70, 70, 70);
+        right: 1rem;
+        background:rgb(151, 148, 148);
         cursor: pointer;
       }

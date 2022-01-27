@@ -1,36 +1,44 @@
 .App {
-  background: rgb(88, 117, 245);
+  background: rgb(142, 172, 148);
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.header {
-  height: 4rem;
-  width: 100%;
-  border-bottom: 2px solid white;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  background: rgba(255, 255, 255, 0.3);
+
+/* size, dimension, and set header background to low opacity 
+    bottom white border separating header from content */
+.header{
+  display:flex;
+  align-items:center;
+  padding-left:6rem;
+  padding-right:6rem;
+  width:100%;
+  border-bottom:.15rem solid white;
+  background:rgba(255, 255, 255, 0.3); 
 }
-.logo {
-  height: 3.5rem;
-  width: 3.5rem;
-  background: url("https://cliparting.com/wp-content/uploads/2018/03/cool-pictures-2018-2.jpg");
+
+  /* position cat gif in corner and size to fit header*/
+.logo{
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-left: -6rem;
+  margin-right: 3rem;
+  background: url("https://static.wikia.nocookie.net/2bdf906d-a7eb-4fd1-bc17-9e0d8d7c7fbc");
+  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 50%;
-  border: 1px solid white;
 }
-.title {
-  color: white;
-  font-weight: bold;
-  font-size: 2rem;
+
+.title{
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1.5rem;
   margin-left: 1rem;
 }
-.messages {
+
+.messages{
   display:flex;
   flex-direction:column-reverse;
   align-items:flex-end;
@@ -39,10 +47,24 @@
   max-height:calc(100vh - 4rem - 4rem);
   padding:0.5rem 0;
 }
-.message {
+
+.message{
   color:white;
-  background:black;
-  padding:0,5rem 1rem;
-  margin:0.2rem;
-  border-radius:0.3rem;
+  font-size: .8rem;
+  font-weight:400;
+  background:rgb(32, 32, 32);
+  padding:.4rem;
+  margin:.5rem;
+  border-radius:15px 15px 0px 15px;
+}
+
+.example-texts{
+  width: 100px;
+  background:white;
+  font-size: .8rem;
+  font-weight:400;
+  color:rgb(32, 32, 32);
+  padding:.4rem;
+  margin:.5rem;
+  border-radius:15px 15px 15px 0;
 }

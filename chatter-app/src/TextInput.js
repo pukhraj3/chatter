@@ -17,11 +17,10 @@ function TextInput(props) {
     return (
         <footer className="footer">
             <input 
-                type="text"
                 className="text-input" 
-                // value={text} 
-                // onChange={(e) => setText(e.target.value)} 
-                // onKeyPress={onKeyPress}
+                value={text} 
+                onChange={(e) => setText(e.target.value)} 
+                onKeyPress={onKeyPress}
             />
             <button className="send" onClick={send}>
                 &#8593; 
