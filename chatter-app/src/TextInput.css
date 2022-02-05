@@ -13,8 +13,9 @@
       /* text input box */
       .text-input {
         padding: 0 1rem;
+        margin-left: 1.9rem;
         height:2rem;
-        width:90%;
+        width:80%;
         background:rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         border: 1px solid white;
@@ -32,4 +33,16 @@
         right: 1rem;
         background:rgb(151, 148, 148);
         cursor: pointer;
+      }
+
+      .camera {
+        border-radius: 50%;
+        border:none;
+        height:1.8rem;
+        width:1.8rem;
+        position: absolute;
+        right: 1rem;
+        background:rgb(199, 10, 10);
+        cursor: pointer;
+        color:beige
       }

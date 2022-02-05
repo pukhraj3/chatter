@@ -9,7 +9,8 @@ body {
   display:flex;
   flex-direction:column;
   align-items:center;
-  background:linear-gradient(90deg, rgb(95, 179, 187) 0%, rgb(141, 81, 219)) 0% 0% / cover; 
+  /* background:linear-gradient(90deg, rgb(95, 179, 187) 0%, rgb(141, 81, 219)) 0% 0% / cover;  */
+  background:#333333;
   color:white;
 }
 
