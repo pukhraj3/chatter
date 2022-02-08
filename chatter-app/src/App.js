@@ -3,7 +3,8 @@ import TextInput from "./TextInput";
 import {useState} from "react";
 import Message from "./Message";
 import { use100vh } from "react-div-100vh";
-import Camera from "react-snap-pic"
+import Camera from "react-snap-pic";
+import NamePicker from "./namePicker.js"
 
 
 // sendMessage runs when we click seend button

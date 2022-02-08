@@ -68,3 +68,20 @@
   margin:.5rem;
   border-radius:15px 15px 15px 0;
 }
+
+.username{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.text-input{
+  color:beige;
+
+}
+
+.editUser{
+  color:firebrick;
+}
+
