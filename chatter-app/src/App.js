@@ -18,6 +18,7 @@ function App() {
   const [showCamera, setShowCamera] = useState(false)
   let [messages, setMessages] = useState([]);
 
+  // name picker
   const [user, setName] = useState('')
 
   // "sendMessage" runs whenever we click the send button

@@ -3,6 +3,8 @@ import "./App.css";
 import {useState} from "react";
 import { FiEdit } from 'react-icons/fi'
 
+
+// a 5: a new component that enables users to set a username
 function NamePicker(props) {
         const [editName, setEditName] = useState(false)
         const [name, setName] = useState('')
@@ -12,9 +14,12 @@ function NamePicker(props) {
         setEditName(false)
     }
 
+    
+    // edit user name button selected
+    // enter key to edit function
+    // code referenced ^ https://stackoverflow.com/questions/31272207/to-call-onchange-event-after-pressing-enter-key
     if (editName) {
     return (
-
         <div className="username">
             <input 
                 className="username-input" 
@@ -29,14 +34,16 @@ function NamePicker(props) {
     )
     }
 
+    // "ok" button selected after inputting username
+    // displays inputted name
+    // FiEdit imported for edit icon
     else {
         return (
             <div className="username">
-                <div>{name}</div> set username: 
                 <button className="editUser" onClick={()=>setEditName(true)}>
-                    <FiEdit/>
+                username <FiEdit/>
                 </button>
-
+                <div>{name}</div> 
             </div>
         )
     }
