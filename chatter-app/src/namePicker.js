@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 import {useState} from "react";
-import { FiEdit, FiSave } from 'react-icons/fi'
+import { FiEdit } from 'react-icons/fi'
 
 function NamePicker(props) {
         const [editName, setEditName] = useState(false)
-        const [name, setName] = useState("")
+        const [name, setName] = useState('')
 
     function edit() {
         props.edit(name)
@@ -14,11 +14,12 @@ function NamePicker(props) {
 
     if (editName) {
     return (
+
         <div className="username">
             <input 
-                className="text-input" 
+                className="username-input" 
                 value={name} 
-                onChange={(e) => setText(e.target.value)} 
+                onChange={(e) => setName(e.target.value)} 
                 onKeyPress={(e) => {
                     if(e.key==="Enter") edit()
                 }}
@@ -28,14 +29,14 @@ function NamePicker(props) {
     )
     }
 
-    if (!editName) {
+    else {
         return (
             <div className="username">
-                <FiUser/>
-                <div>{name}</div>
+                <div>{name}</div> set username: 
                 <button className="editUser" onClick={()=>setEditName(true)}>
-                    <fiEdit />
+                    <FiEdit/>
                 </button>
+
             </div>
         )
     }

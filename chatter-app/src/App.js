@@ -18,6 +18,8 @@ function App() {
   const [showCamera, setShowCamera] = useState(false)
   let [messages, setMessages] = useState([]);
 
+  const [user, setName] = useState('')
+
   // "sendMessage" runs whenever we click the send button
   function sendMessage(text) {
 
@@ -49,8 +51,10 @@ function App() {
       style={{ height: height, minHeight: height, maxHeight: height }}>
       {showCamera && <Camera takePicture={takePicture} />}
       <header className="header">
-        <div className="logo" />
+        <div className="logo" >
         <span className="title">CATTER</span>
+        </div>
+        <NamePicker edit={setName}/>
       </header>
       <div className="example-texts">
         hi whats up!
