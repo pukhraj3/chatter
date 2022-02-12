@@ -29,24 +29,21 @@ function NamePicker(props) {
                     if(e.key==="Enter") edit()
                 }}
             />
-            <button className="username" onClick={edit}>OK</button>
+            <button className="username" onClick={edit}>
+                OK
+            </button>
         </div>
-    )
+        );
     }
 
     // "ok" button selected after inputting username
     // displays inputted name
-    // FiEdit imported for edit icon
-    else {
-        return (
-            <div className="username">
-                <button className="editUser" onClick={()=>setEditName(true)}>
-                username <FiEdit/>
-                </button>
-                <div>{name}</div> 
-            </div>
+    return (
+        <div className="username">
+            <span className="editUser">{name || "Set Username:"} </span>
+            <FiEdit size="24" onClick={() => setEditName(true)}/>
+        </div>
         )
     }
-}
 
 export default NamePicker

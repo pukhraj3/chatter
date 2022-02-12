@@ -1,6 +1,6 @@
 .App {
   background: rgb(142, 172, 148);
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,7 +10,9 @@
     bottom white border separating header from content */
 .header{
   display:flex;
+  flex-direction: row;
   align-items:center;
+  justify-content: space-around;
   padding-left:6rem;
   padding-right:6rem;
   width:100%;
@@ -25,7 +27,6 @@
   margin-left: -6rem;
   margin-right: 3rem;
   background: url("https://static.wikia.nocookie.net/2bdf906d-a7eb-4fd1-bc17-9e0d8d7c7fbc");
-  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +36,6 @@
   color: rgb(0, 0, 0);
   font-weight: 500;
   font-size: 1.5rem;
-  margin-left: 3rem;
 }
 
 .messages{
@@ -49,6 +49,8 @@
 }
 
 .message{
+  display:flex;
+  flex:1;
   color:white;
   font-size: .8rem;
   font-weight:400;
@@ -56,6 +58,8 @@
   padding:.4rem;
   margin:.5rem;
   border-radius:15px 15px 0px 15px;
+  overflow-wrap: break-word;
+  position:relative;
 }
 
 .example-texts{
@@ -73,6 +77,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 5rem ;
 }
 
 .text-input{
@@ -87,6 +92,18 @@
   color:black;
   border: none;
   background-color: rgba(255, 255, 255, 0);
-  margin-left: 15rem;
+  margin-left: 2rem;
 }
 
+.message-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.message-user{
+  position: absolute;
+  left: 0;
+  top: -0.8rem;
+  font-size: 0.5rem;  
+}
